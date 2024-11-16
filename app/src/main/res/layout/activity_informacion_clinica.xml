@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallpaperclinica"
+    tools:context=".Informacion_clinica">
+
+    <ImageView
+        android:id="@+id/btnInicio"
+        android:layout_width="112dp"
+        android:layout_height="53dp"
+        android:background="@color/blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/icon_home" />
+
+    <ImageView
+        android:id="@+id/btnInfo"
+        android:layout_width="108dp"
+        android:layout_height="53dp"
+        android:background="@color/blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnInicio"
+        app:srcCompat="@drawable/icon_info" />
+
+    <ImageView
+        android:id="@+id/btnPerfil"
+        android:layout_width="92dp"
+        android:layout_height="53dp"
+        android:background="@color/blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnInfo"
+        app:srcCompat="@drawable/icon_user2" />
+
+    <ImageView
+        android:id="@+id/btnCerrar"
+        android:layout_width="99dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="3dp"
+        android:background="@color/blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/btnPerfil"
+        app:srcCompat="@drawable/icon_close" />
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="234dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="21dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logoclinicaveterinaria1" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#4CAF50"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView17">
+
+        <ImageView
+            android:id="@+id/imageView18"
+            android:layout_width="70dp"
+            android:layout_height="73dp"
+            android:translationX="15dp"
+            android:translationY="70dp"
+            app:srcCompat="@drawable/icon_mision" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MISIÓN"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:translationX="190dp"
+            android:translationY="-60dp" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="268dp"
+            android:layout_height="146dp"
+            android:gravity="start"
+            android:justificationMode="inter_word"
+            android:text="La misión es ofrecer atención médica de calidad mediante profesionales y tecnología avanzada, enfocándose en la prevención, diagnóstico y tratamiento. Se utiliza un sistema de gestión de citas y tecnología de diagnóstico, con el compromiso de mejorar la salud y bienestar de los pacientes de manera eficiente, humana y accesible."
+            android:translationX="110dp"
+            android:translationY="-55dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="415dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="58dp"
+        android:background="#009688"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <ImageView
+            android:id="@+id/imageView19"
+            android:layout_width="70dp"
+            android:layout_height="73dp"
+            android:translationX="320dp"
+            android:translationY="70dp"
+            app:srcCompat="@drawable/icon_vision" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VISIÓN"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:translationX="190dp"
+            android:translationY="-60dp" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="268dp"
+            android:layout_height="146dp"
+            android:gravity="start"
+            android:justificationMode="inter_word"
+            android:text="La visión es consolidarse como una de las mejores clínicas, destacando por la innovación tecnológica y un enfoque integral en el cuidado del paciente. BioVida busca ser pionera en el uso de tecnologías emergentes para optimizar la atención médica, combinando eficiencia, precisión y un enfoque personalizado que prioriza el bienestar integral. Se esfuerzan en fusionar tecnología y atención humana para ofrecer una experiencia de salud de alto nivel, estableciendo nuevos estándares en la industria médica."
+            android:translationX="30dp"
+            android:translationY="-50dp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

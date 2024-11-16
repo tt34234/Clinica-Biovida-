@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallpaperclinica"
+    tools:context=".editarcitas_administrador">
+
+    <!-- Texto de información del paciente -->
+
+    <!-- Imagen del paciente -->
+
+    <!-- Spinner para seleccionar el estado de la cita -->
+
+    <!-- Fecha programada -->
+
+    <!-- Botón para cambiar el estado de la cita -->
+
+    <TextView
+        android:id="@+id/patientInfo"
+        android:layout_width="0dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="16dp"
+        android:text="Cod_Paciente: "
+        android:textColor="#000000"
+        android:textSize="17sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/paciente1"
+        app:layout_constraintEnd_toStartOf="@+id/dniPaciente"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <ImageView
+        android:id="@+id/patientImage"
+        android:layout_width="0dp"
+        android:layout_height="111dp"
+        android:src="@drawable/hcita"
+        app:layout_constraintBottom_toBottomOf="@+id/paciente1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/dniPaciente"
+        app:layout_constraintTop_toBottomOf="@+id/paciente1" />
+
+    <Spinner
+        android:id="@+id/estado1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:entries="@array/status_options"
+        app:layout_constraintBottom_toTopOf="@+id/motivocancelacionCita"
+        app:layout_constraintStart_toStartOf="@+id/motivocancelacionCita" />
+
+    <TextView
+        android:id="@+id/appointmentDate"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="13dp"
+        android:text="Motivo Cancelacion"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/motivocancelacionCita"
+        app:layout_constraintEnd_toStartOf="@+id/motivocancelacionCita"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/motivocancelacionCita"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/bt1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#4CAF50"
+        android:text="Cambiar estado de la cita"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fecha" />
+
+    <TextView
+        android:id="@+id/paciente1"
+        android:layout_width="132dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView15"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/blue"
+        app:layout_constraintBottom_toTopOf="@+id/textView11"
+        app:layout_constraintEnd_toStartOf="@+id/bt2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bt2"
+        app:srcCompat="@drawable/icon_gestinarcitas" />
+
+    <ImageView
+        android:id="@+id/bt2"
+        android:layout_width="0dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="27dp"
+        android:background="@color/blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView7"
+        app:srcCompat="@drawable/icon_horario" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="0dp"
+        android:layout_height="27dp"
+        android:background="@color/blue"
+        android:text="Gestionar citas"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView12"
+        app:layout_constraintEnd_toStartOf="@+id/textView12"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/blue"
+        android:text="Horarios"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView11"
+        app:layout_constraintTop_toBottomOf="@+id/bt2" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="95dp"
+        android:text="DNI"
+        android:textColor="#161515"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="44dp"
+        android:text="Sintomas"
+        android:textColor="#0E0E0E"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/sintomasCita"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="12dp"
+        android:text="Estado:"
+        android:textColor="#1B1B1B"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/appointmentDate"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/sintomasCita"
+        android:layout_width="0dp"
+        android:layout_height="82dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginEnd="102dp"
+        android:layout_marginBottom="130dp"
+        app:layout_constraintBottom_toBottomOf="@+id/appointmentDate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView16"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/motivocancelacionCita"
+        android:layout_width="0dp"
+        android:layout_height="104dp"
+        android:layout_marginTop="87dp"
+        android:layout_marginEnd="73dp"
+        android:layout_marginBottom="87dp"
+        app:layout_constraintBottom_toTopOf="@+id/bt1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/appointmentDate"
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginBottom="12dp"
+        android:text="Se regitro la cita el "
+        android:textColor="#0E0E0E"
+        app:layout_constraintBottom_toBottomOf="@+id/fecha"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/fecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fecha de la cita"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="312dp"
+        android:layout_marginBottom="311dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView20"
+        app:layout_constraintTop_toBottomOf="@+id/paciente1" />
+
+    <TextView
+        android:id="@+id/dniPaciente"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="31dp"
+        app:layout_constraintBottom_toTopOf="@+id/sintomasCita"
+        app:layout_constraintEnd_toStartOf="@+id/patientImage"
+        app:layout_constraintStart_toEndOf="@+id/patientInfo"
+        app:layout_constraintTop_toTopOf="@+id/textView15" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

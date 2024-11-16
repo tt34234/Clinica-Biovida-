@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">App Clínica Biovida</string>
+    <string name="dni_paciente">Ingresar dni del paciente</string>
+    <string name="password_paciente">Ingresar password del paciente</string>
+    <string name="dni_administrador">Ingresar dni del administrador</string>
+    <string name="password_administrador">Ingresar password del administrador</string>
+    <string-array name="status_options">
+        <item>Seleccione una opcion</item>
+        <item>programada</item>
+        <item>Atendido</item>
+        <item>Cancelado</item>
+    </string-array>
+</resources>

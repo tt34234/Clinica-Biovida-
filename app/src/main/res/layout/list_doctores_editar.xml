@@ -1,0 +1,122 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardElevation="4dp"
+    app:cardCornerRadius="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="127dp"
+        android:background="@color/celeste"
+        app:layout_constraintBottom_toBottomOf="@+id/estadoDoctor"
+        app:layout_constraintTop_toBottomOf="@+id/estadoDoctor">
+
+        <!-- Imagen del doctor -->
+        <ImageView
+            android:id="@+id/listImageDoctor"
+            android:layout_width="97dp"
+            android:layout_height="93dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/placeholder_doctor"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Nombre del doctor -->
+        <TextView
+            android:id="@+id/nombreDoctor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Nombre del doctor"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/listImageDoctor"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Apellido del doctor -->
+        <TextView
+            android:id="@+id/apellidoDoctor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Apellido del doctor"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/listImageDoctor"
+            app:layout_constraintTop_toBottomOf="@id/nombreDoctor" />
+
+        <!-- Estado del doctor -->
+        <TextView
+            android:id="@+id/estadoDoctor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Estado doctor"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/listImageDoctor"
+            app:layout_constraintTop_toBottomOf="@id/apellidoDoctor" />
+
+        <!-- Especialidad del doctor -->
+        <TextView
+            android:id="@+id/especialidadDoctor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Especialidad"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/listImageDoctor"
+            app:layout_constraintTop_toBottomOf="@id/estadoDoctor" />
+
+        <!-- Sede del doctor -->
+        <TextView
+            android:id="@+id/sedeDoctor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sede"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@id/listImageDoctor"
+            app:layout_constraintTop_toBottomOf="@id/especialidadDoctor" />
+
+        <!-- Icono de editar -->
+
+        <ImageView
+            android:id="@+id/editar"
+            android:layout_width="60dp"
+            android:layout_height="56dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.309"
+            app:srcCompat="@drawable/editar" />
+
+        <Button
+            android:id="@+id/btncambiarestado"
+            android:layout_width="137dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="@color/blue"
+            android:text="Cambiar Estado"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

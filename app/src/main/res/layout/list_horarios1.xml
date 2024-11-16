@@ -1,0 +1,99 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardElevation="4dp"
+
+    app:cardCornerRadius="8dp">
+
+    <RelativeLayout
+        android:layout_width="403dp"
+        android:layout_height="120dp"
+        android:background="@color/celeste">
+
+        <ImageView
+            android:id="@+id/listImageHorario"
+            android:layout_width="87dp"
+            android:layout_height="83dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/placeholder_horario" />
+
+        <TextView
+            android:id="@+id/fechaHorario"
+            android:layout_width="184dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/listImageHorario"
+            android:text="Fecha"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/horaInicio"
+            android:layout_width="185dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fechaHorario"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_toEndOf="@id/listImageHorario"
+            android:text="Hora Inicio"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/estadoHorario"
+            android:layout_width="87dp"
+            android:layout_height="38dp"
+            android:layout_alignParentTop="true"
+
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="6dp"
+            android:layout_toEndOf="@+id/fechaHorario"
+            android:text="Estado Horario"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/horaFin"
+            android:layout_width="185dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/horaInicio"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_toEndOf="@id/listImageHorario"
+            android:text="Hora fin"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnSeleccionarHorario"
+            android:layout_width="200dp"
+            android:layout_height="36dp"
+            android:layout_below="@+id/horaFin"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="2dp"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/green"
+            android:layout_marginEnd="86dp"
+            android:layout_marginBottom="2dp"
+            android:text="Seleccionar Horario" />
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

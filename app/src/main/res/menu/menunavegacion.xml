@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/icon_home"
+        android:title="Inicio" />
+    <item
+        android:id="@+id/info"
+        android:icon="@drawable/icon_info"
+        android:title="Info" />
+    <item
+        android:id="@+id/user"
+        android:icon="@drawable/icon_user2"
+        android:title="Usuario" />
+    <item
+        android:id="@+id/close"
+        android:icon="@drawable/icon_close"
+        android:title="Cerrar" />
+</menu>
